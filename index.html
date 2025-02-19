@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickopolis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Clickopolis</h1>
+        <div id="city-info">
+            <h2 id="city-name"></h2>
+            <h3 id="ruler-name"></h3>
+        </div>
+    </header>
+    
+    <main>
+        <section id="resources-section">
+            <h2>Basic Resources</h2>
+            <div class="resource-container">
+                <div class="resource-row">
+                    <button id="gather-food">🍞 Gather Food</button>
+                    <span>Food: <span id="food-count">0.0</span> (Max storage: 100) <span id="food-rate">0.0/s</span></span>
+                </div>
+                <div class="resource-row">
+                    <button id="gather-wood">🌲 Cut Wood</button>
+                    <span>Wood: <span id="wood-count">0.0</span> (Max storage: 100) <span id="wood-rate">0.0/s</span></span>
+                </div>
+                <div class="resource-row">
+                    <button id="gather-rocks">⛏️ Mine Rocks</button>
+                    <span>Rocks: <span id="rock-count">0.0</span> (Max storage: 100) <span id="rock-rate">0.0/s</span></span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="buildings-section">
+            <h2>Buildings</h2>
+            <div class="building-container">
+                <div class="building-row">
+                    <button id="build-apartment">🏢 Build Apartment</button>
+                    <span>Apartments: <span id="apartment-count">0</span> Each apartment can hold 2 people</span>
+                </div>
+                <div class="building-row">
+                    <button id="build-small-house">🏠 Build Small House</button>
+                    <span>Small Houses: <span id="small-house-count">0</span> Each small house can hold 8 people</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="manufactured-resources-section">
+            <h2>Manufactured Resources</h2>
+            <div class="manufactured-container">
+                <span>🧱 Bricks: <span id="brick-count">0</span></span>
+            </div>
+        </section>
+        
+        <section id="other-resources-section">
+            <h2>Other Resources</h2>
+            <div class="other-resources-container">
+                <span>🟤 Clay: <span id="clay-count">0</span></span>
+            </div>
+        </section>
+        
+        <section id="population-section" style="position: absolute; right: 20px; top: 100px;">
+            <h2>Population</h2>
+            <div class="population-container">
+                <span>Total Population: <span id="total-population">0</span></span>
+                <span>Ready to Work: <span id="ready-to-work">0</span></span>
+                <div class="population-row">
+                    <button id="create-citizen">👤 Create a Citizen</button>
+                    <span>Citizens: <span id="citizen-count">0</span> Each citizen requires 25 food & available space</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="workforce-section" style="position: absolute; right: 20px; top: 300px;">
+            <h2>The Workforce</h2>
+            <div class="workforce-container">
+                <div class="workforce-row">
+                    <button id="assign-agricultural-worker">🌾 Agricultural Worker</button>
+                    <span>Agricultural Workers: <span id="agricultural-worker-count">0</span> Assigns available citizens to farming</span>
+                </div>
+                <div class="workforce-row">
+                    <button id="assign-lumberjack">🪵 Lumberjack</button>
+                    <span>Lumberjacks: <span id="lumberjack-count">0</span> Assigns available citizens to wood cutting</span>
+                </div>
+                <div class="workforce-row">
+                    <button id="assign-rock-miner">⛏️ Rock Miner</button>
+                    <span>Rock Miners: <span id="rock-miner-count">0</span> Assigns available citizens to mining rocks</span>
+                </div>
+                <div class="workforce-row">
+                    <button id="assign-brickmaker">🏭 Brickmaker</button>
+                    <span>Brickmakers: <span id="brickmaker-count">0</span> Converts 2 clay into 2 bricks per second</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Clickopolis</p>
+    </footer>
+</body>
+</html>
